@@ -4,7 +4,6 @@ library(sf)
 library(tidyverse)
 library(lubridate)
 
-
 #############################################################
 ############ ERA5 reanalysis ##############
 #############################################################
@@ -30,7 +29,7 @@ request_Berlin_Single_2019 <- list(
 ecmwfr::wf_request(user = user_cds,                    # user ID (for authentication)
                    request  = request_Berlin_Single_2019,      # the request object
                    transfer = TRUE,                            # download the file
-                   path = "D:/Data-Modelling/EUcities/Meteo/") # store data in current working directory
+                   path = "D:/Data-Modelling/Meteo/") # store data in current working directory
 
 
 ##################################
@@ -85,7 +84,7 @@ request_Berlin_RH_2020 <- list(
 wf_request(user = user_cds,   # user ID (for authentification)
            request  = request_Berlin_RH_2020,  # the request
            transfer = TRUE,     # download the file
-           path = "D:/Data-Modelling/EUcities/Meteo/")# store data in current working directory
+           path = "D:/Data-Modelling/Meteo/")# store data in current working directory
 
 ############
 # 2019
