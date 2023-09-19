@@ -1,8 +1,7 @@
-# URBAN ET
-Modelling and mapping evapotranspiration in urban environments
+# Green Cooling Services
+Simulating and mapping Green Cooling Services in urban environments
 
-This page aims to share R codes to model urban ET using the Soil-Canopy-Observation of Photosynthesis and Energy fluxes (SCOPE). A case study using open-access data for Berlin is used throghout the repository. SCOPE code is originally in MATLAB, but it will be run through the R package rSCOPE (see more at https://github.com/AlbyDR/rSCOPE).
-
+This page aims to share R codes to simulate Evapotranspirative Cooling Service and Radiative Cooling Service based on urban ET and skin surface temperature using the Soil-Canopy-Observation of Photosynthesis and Energy fluxes (SCOPE). A case study using open-access data for different European cities is used throughout the repository. SCOPE code is originally in MATLAB, but it will be run through the R package rSCOPE (see more at https://github.com/AlbyDR/rSCOPE).
 
 ### **The codes are divided into:**
 
@@ -22,7 +21,7 @@ This page aims to share R codes to model urban ET using the Soil-Canopy-Observat
    
 **2- Modelling (Matlab through R)**
 
-      2.1 SCOPE input parameters preparetion (pixel timeseries)  
+      2.1 SCOPE input parameters preparation (pixel timeseries)  
 
       2.2 Run the SCOPE model
 
@@ -35,7 +34,7 @@ This page aims to share R codes to model urban ET using the Soil-Canopy-Observat
    
 **3- Results and Model accuracy assessment (R)**
 
-         3.1 Correct the prediction to urban environment and map ET and Greening Cooling Services
+         3.1 Correct the prediction to urban environments and map ET and Greening Cooling Services
       
          3.2 Model accuracy assessment with EC data (if available)
 
@@ -48,14 +47,14 @@ Rocha, A. D., Vulova, S., Meier, F., Förster, M., & Kleinschmit, B. (2022). Map
 Duarte Rocha, A., Vulova, S., van der Tol, C., Förster, M., and Kleinschmit, B.: Modelling hourly evapotranspiration in urban environments with SCOPE using open remote sensing and meteorological data, Hydrol. Earth Syst. Sci., 26, 1111–1129, https://doi.org/10.5194/hess-26-1111-2022, 2022.
 
 #### Package repository
-The codes and R package for the input pre-processing, modelling and mapping is available in the GitHub https://github.com/AlbyDR/URBAN_ET and https://github.com/AlbyDR/rSCOPE
+The codes and R package for the input pre-processing, modelling and mapping are available in GitHub https://github.com/AlbyDR/URBAN_ET and https://github.com/AlbyDR/rSCOPE
 
 Duarte Rocha, A.: AlbyDR/rSCOPE: rSCOPE v1.0 (Evapotranspiration), Zenodo [code], https://doi.org/10.5281/zenodo.6204580, 2022.
 
 #### Data repository
 Duarte Rocha, A. (2022). Berlin Evapotranspiration and Cooling Services. https://doi.org/10.14279/depositonce-15870
 
-### Methodology framework
+### Methodology Framework
 The flowchart shows the two-stage modelling processing to derive urban ET and greening cooling service index from open-access data inputs.
 
 <img src="https://user-images.githubusercontent.com/40297927/179981190-b0a6445c-e067-40cd-8e4c-78d7d809bad7.png" width=70% height=70%>
