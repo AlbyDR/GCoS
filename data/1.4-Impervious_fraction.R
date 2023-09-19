@@ -17,7 +17,26 @@ plot(obj_locations_cities$AT_Vienna$utm$buffer_fetch, add = TRUE)
 plot(obj_locations_cities$AT_Vienna$utm$points, add = TRUE)
 
 terra::writeRaster(impervious_Vienna, "D:/Data-Modelling/LULC/AT/impervious_Vienna.tif", filetype = "GTiff", overwrite=TRUE)
-impervious_Vienna <- terra::rast("D:/Research topics/Data-Modelling/EUcities/LULC/AT/non_impervious_Vienna.tif")
 
-plot(impervious_Vienna)
+# download the Urban Atlas set from the link
+# https://land.copernicus.eu/local/urban-atlas/urban-atlas-2018
 
+LULC_Vienna <-  sf::st_read(paste0("D:/Data-Modelling/LULC/Vienna/",
+                                   "AT001L3_WIEN_UA2018_v013/Data/", 
+                                   "AT001L3_WIEN_UA2018_v013.gpkg"))
+
+LULC_Vienna <- sf::st_transform(LULC_Vienna, crs = crs(Border_Vienna))
+LULC_Vienna <- sf::st_transform(LULC_Vienna, crs = "+proj=utm +zone=33 +datum=WGS84 +units=m +no_defs")
+
+# water LULC
+LULC_Vienna %>%
+  filter(class_2018 %in% c("Water")) -> LULC_water_Vienna
+
+LULC_water_Vienna$water <- 1
+
+plot(LULC_water_Vienna["water"])
+
+LULC_water_Vienna <- fasterize::fasterize(LULC_water_Vienna, impervious_Vienna, field = "water")
+LULC_water_Vienna[is.na(LULC_water_Vienna[])] <- 0 
+
+LULC_water_Vienna <- terra::rast(LULC_water_Vienna)
