@@ -7,13 +7,13 @@ This page aims to share R codes to simulate Evapotranspirative Cooling Service a
 
 **1- Model inputs collection and preprocessing (R)**
 
-      1.1 Download meteorological station data (DWD - German Climate Data Center)
+      1.1 Meteorological forcing data (ERA5 - ECMWF reanalysis)
       
-      1.2 Interpolation of the meteorological data
+      1.2 LAI-derived Remote Sensing Data (Copernicus Global Land Service)
 
-      1.3 LAI derived Remote Sensing Data (Copernicus)
-
-      1.4 Vegetation height and vegetation fraction (Berlin Environmental Atlas)
+      1.3 Vegetation height (ETH Global Canopy Height 2020)
+      
+      1.4 Impervious fraction (Copernicus – Land Monitoring Service)
 
       1.5 Eddy Covariance data cleaning and footprints for validation (TUB UCO)
  
