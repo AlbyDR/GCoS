@@ -1,10 +1,10 @@
+library(rSCOPE)
 library(RCurl)
 library(ncdf4)
 library(terra)
 library(raster)
 library(sf)
 library(tidyverse)
-library(data.table)
 
 # Download LAI images
 ##################################################################################
