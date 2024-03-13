@@ -42,7 +42,7 @@ This page aims to share R codes to simulate Evapotranspirative Cooling Service a
          
          
 #### References:
-Rocha, A. D., Vulova, S., Meier, F., Förster, M., & Kleinschmit, B. (2022). Mapping evapotranspirative and radiative cooling services in an urban environment. SSRN Electronic Journal, 85. https://doi.org/10.2139/ssrn.4089553.
+Rocha, A. D., Vulova, S., Meier, F., Förster, M. & Kleinschmit, B. Mapping evapotranspirative and radiative cooling services in an urban environment. Sustain. Cities Soc. 85, 104051 (2022). https://doi.org/10.1016/j.scs.2022.104051.
 
 Duarte Rocha, A., Vulova, S., van der Tol, C., Förster, M., and Kleinschmit, B.: Modelling hourly evapotranspiration in urban environments with SCOPE using open remote sensing and meteorological data, Hydrol. Earth Syst. Sci., 26, 1111–1129, https://doi.org/10.5194/hess-26-1111-2022, 2022.
 
